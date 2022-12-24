@@ -183,15 +183,25 @@
         .blog>li:nth-of-type(3):hover>a, .home>li:nth-last-of-type(1):hover>a, .works>li:nth-last-of-type(1)>div:hover>a{
             width: 40%;
         }
-
         .menu>ul>li>ul{
-            opacity: 0;
             visibility: hidden;
+            opacity: 0; 
+        }
+        .menu>ul>li>ul>*{
+            visibility: hidden;
+            opacity: 0;
         }
         .menu>ul>li:hover>ul{
-            opacity: 1;
             visibility: visible;
-            z-index: 100;
+            opacity: 1;
+            z-index: 1000;
+            transition: none;
+        }
+        .menu>ul>li:hover>ul>*{
+            visibility: visible;
+            opacity: 1;
+            z-index: 1000;
+            transition: none;
         }
         .mountain{
             width: 100%;
